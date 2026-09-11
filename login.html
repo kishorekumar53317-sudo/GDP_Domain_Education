@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | EduGuide-AI - Student Portal</title>
+    <meta name="description" content="Log in to EduGuide-AI to continue your personalized study journey and chat with your AI Tutor.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+
+<div class="auth-container">
+    <div class="auth-card">
+        <a href="index.html" class="logo auth-logo">
+            <div class="logo-icon">🎓</div>
+            EduGuide<span>-AI</span>
+        </a>
+
+        <h1>Welcome Back</h1>
+        <p class="auth-description">
+            Sign in to access your AI Tutor and saved study history.
+        </p>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="loginEmail">Email Address</label>
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="student@university.edu"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="auth-btn" id="loginSubmitBtn">
+                Sign In to EduGuide-AI
+            </button>
+        </form>
+
+        <p id="loginMessage"></p>
+
+        <p class="auth-switch">
+            Don't have an account yet?
+            <a href="signup.html">Create Free Account</a>
+        </p>
+
+        <a href="index.html" class="back-home">
+            ← Return to Home Page
+        </a>
+    </div>
+</div>
+
+<script src="theme.js"></script>
+<script type="module" src="auth.js"></script>
+</body>
+</html>

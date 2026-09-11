@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tutor | EduGuide-AI - Interactive Study Assistant</title>
+    <meta name="description" content="Ask your academic questions directly to EduGuide-AI Tutor. Get instant step-by-step answers, math proofs, and code explanations.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">🎓</div>
+            EduGuide<span>-AI</span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="ai.html" class="active">AI Tutor</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html" class="nav-btn">Get Started Free</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <button id="themeToggle" class="theme-toggle" title="Toggle Light/Dark Theme">🌙</button>
+            <button id="mobileMenuBtn" class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+</header>
+
+<section class="ai-section">
+    <div class="ai-heading">
+        <div class="badge">YOUR PERSONAL AI TUTOR</div>
+        <h1>
+            Ask Anything.<br>
+            <span class="gradient-text">Learn Everything.</span>
+        </h1>
+        <p>
+            Type your question below or click a topic prompt. EduGuide-AI will explain concepts step-by-step in plain language.
+        </p>
+
+        <div class="subject-pills">
+            <button class="subject-chip active" data-subject="All">🌟 All Subjects</button>
+            <button class="subject-chip" data-subject="Math">📐 Mathematics</button>
+            <button class="subject-chip" data-subject="Coding">💻 Computer Science</button>
+            <button class="subject-chip" data-subject="Physics">⚡ Physics</button>
+            <button class="subject-chip" data-subject="Chemistry">🧪 Chemistry</button>
+            <button class="subject-chip" data-subject="Biology">🧬 Biology</button>
+        </div>
+    </div>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="chat-status">
+                <div class="status-dot" id="serverStatusDot"></div>
+                <div>
+                    <strong>🤖 EduGuide AI Tutor</strong>
+                    <small id="serverStatusText" style="color: var(--accent-teal);">Connected to Gemini AI Server</small>
+                </div>
+            </div>
+
+            <div class="chat-actions">
+                <button class="icon-btn" id="clearChatBtn" title="Clear Chat History">🗑️ Clear Chat</button>
+            </div>
+        </div>
+
+        <div class="preset-prompts">
+            <button class="prompt-chip">Explain recursion simply in Python</button>
+            <button class="prompt-chip">What is Bayes' Theorem & real-life use?</button>
+            <button class="prompt-chip">Derive Newton's Second Law F=ma</button>
+            <button class="prompt-chip">Explain Photosynthesis steps</button>
+            <button class="prompt-chip">How does binary search work?</button>
+        </div>
+
+        <div id="chatBox" class="chat-box">
+            <div class="chat-message ai">
+                <strong>🤖 EduGuide AI Tutor</strong>
+                <p>
+                    Hello there! 👋 I'm your AI Tutor powered by Gemini. What topic, concept, or homework problem would you like to explore today?
+                </p>
+            </div>
+        </div>
+
+        <div class="chat-input-container">
+            <form id="aiForm" class="chat-input">
+                <input
+                    type="text"
+                    id="userQuestion"
+                    placeholder="Ask your question (e.g. 'Explain integration by parts step by step')..."
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit" class="send-btn" id="sendBtn">
+                    <span>Send</span> ➔
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-brand">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🎓</div>
+                EduGuide<span>-AI</span>
+            </a>
+            <p>
+                Making quality education simpler, faster, and personalized for every student across the globe.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Platform</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="ai.html">AI Tutor Interface</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Account</h4>
+            <ul>
+                <li><a href="login.html">Student Login</a></li>
+                <li><a href="signup.html">Create Free Account</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Subjects</h4>
+            <ul>
+                <li><a href="ai.html">Mathematics</a></li>
+                <li><a href="ai.html">Computer Science</a></li>
+                <li><a href="ai.html">Physics & Chemistry</a></li>
+                <li><a href="ai.html">Biology & Life Sciences</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 EduGuide-AI. All Rights Reserved. Built for smarter learning.</p>
+    </div>
+</footer>
+
+<script src="theme.js"></script>
+<script src="ai.js"></script>
+</body>
+</html>
